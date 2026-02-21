@@ -21,13 +21,13 @@ export function CustomerList() {
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     className="flex items-center justify-between p-3 rounded-xl hover:bg-surface-hover transition-colors cursor-pointer group"
                 >
-                    <div className="flex items-center gap-4">
-                        <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-sm font-semibold group-hover:bg-primary group-hover:text-white transition-colors">
+                    <div className="flex items-center gap-3 sm:gap-4 min-w-0 flex-1">
+                        <div className="w-10 h-10 shrink-0 rounded-full bg-gray-100 flex items-center justify-center text-sm font-semibold group-hover:bg-primary group-hover:text-white transition-colors">
                             {customer.initials}
                         </div>
-                        <div>
-                            <p className="font-semibold text-sm">{customer.name}</p>
-                            <p className="text-xs text-subtext">{customer.email}</p>
+                        <div className="min-w-0 overflow-hidden w-full">
+                            <p className="font-semibold text-sm truncate">{customer.name}</p>
+                            <p className="text-xs text-subtext truncate">{customer.email}</p>
                         </div>
                     </div>
                     <div className="font-semibold text-success text-sm">
