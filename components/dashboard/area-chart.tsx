@@ -63,7 +63,7 @@ export function AreaChart() {
                     />
                     <Tooltip
                         contentStyle={{ borderRadius: "8px", border: "none", boxShadow: "0 10px 15px -3px rgba(0,0,0,0.1)", fontWeight: "500" }}
-                        formatter={(value: number) => [`$${value}`, "Revenue"]}
+                        formatter={(value: any) => [`$${value}`, "Revenue"]}
                         cursor={{ stroke: '#126DFB', strokeWidth: 1, strokeDasharray: '3 3' }}
                     />
                     <Area
